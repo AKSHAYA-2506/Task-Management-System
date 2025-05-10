@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Task Management System</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('/Task.jpg');
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .about-box {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
+      width: 600px;
+      max-width: 90%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #ffffff;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 25px;
+      color: #00ffff;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 15px;
+    }
+
+    ul li {
+      margin: 8px 0;
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #00ff99;
+    }
+  </style>
+</head>
+<body>
+  <div class="about-box">
+    <h1>About Us</h1>
+    <p>
+      Welcome to the <strong>Task Management System</strong> – your trusted solution to
+      organize, prioritize, and accomplish tasks efficiently.
+    </p>
+
+    <h2>Our Mission</h2>
+    <p>
+      To simplify productivity by building an intuitive and collaborative platform for users and teams.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>✅ Task creation and tracking</li>
+      <li>📅 Deadlines with reminders</li>
+      <li>👥 Team collaboration</li>
+      <li>🔐 Secure access and user roles</li>
+    </ul>
+
+    <h2>Our Team</h2>
+    <p>
+      A passionate group of developers and designers building tools to help you stay organized and productive.
+    </p>
+
+    <footer>
+      &copy; 2025 Task Management System. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
