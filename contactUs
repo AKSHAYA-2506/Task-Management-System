@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Task Management System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('/Task.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .contact-box {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 30px;
+      width: 400px;
+      max-width: 90%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .contact-header {
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      color: #ffffff;
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 14px;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .btn-send {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-send:hover {
+      background: linear-gradient(to right, #5e0acc, #1a6efc);
+    }
+
+    .message {
+      margin-top: 20px;
+      color: #00ff99;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="contact-box">
+  <div class="contact-header">Contact Us</div>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Your name" required minlength="2" maxlength="50">
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="you@example.com" required maxlength="100">
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" placeholder="Your message..." required minlength="10" maxlength="500"></textarea>
+
+    <button class="btn-send" type="submit">Send Message</button>
+
+    <div class="message" id="form-message"></div>
+  </form>
+</div>
+
+<!-- ✅ Add this JavaScript at the END of the body -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the page from refreshing
+
+    // You can add custom validation here if needed
+
+    // Show a thank-you message
+    const msg = document.getElementById("form-message");
+    msg.textContent = "✅ Thank you! Your message has been sent.";
+    
+    // Optionally clear the form
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
